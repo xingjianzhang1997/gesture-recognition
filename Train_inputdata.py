@@ -45,8 +45,8 @@ def get_files(file_dir):
     image_list = np.hstack((gesture_1, gesture_2, gesture_3, gesture_4, gesture_5))  # 在水平方向平铺合成一个行向量
     label_list = np.hstack((label_gesture_1, label_gesture_2, label_gesture_3, label_gesture_4, label_gesture_5))
 
-    temp = np.array([image_list, label_list])  # 生成一个两行数组列表，大小是2 X 2500
-    temp = temp.transpose()   # 转置向量，大小变成2500 X 2
+    temp = np.array([image_list, label_list])  # 生成一个两行数组列表，大小是2 X (1300X4+1450)
+    temp = temp.transpose()   # 转置向量，大小变成(1300X4+1450) X 2
     np.random.shuffle(temp)   # 乱序，打乱这2500个例子的顺序，一个乱序的效果不太明显
     np.random.shuffle(temp)
     np.random.shuffle(temp)
