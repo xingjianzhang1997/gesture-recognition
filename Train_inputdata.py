@@ -90,7 +90,7 @@ def get_batch(image, label, image_W, image_H, batch_size, capacity):
     # 统一图片大小
     image = tf.image.resize_images(image, [image_H, image_W], method=tf.image.ResizeMethod.NEAREST_NEIGHBOR)
     image = tf.cast(image, tf.float32)
-    image = tf.image.per_image_standardization(image)  # 标准化图片，因为前两行代码已经处理过了，所以可要可不要
+    image = tf.image.per_image_standardization(image)  # 标准化图片（图片归一化）
 
     # 打包batch的大小
     image_batch, label_batch = tf.train.batch([image, label],
