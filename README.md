@@ -36,7 +36,7 @@
 （1）图像预处理多一些如去除背景  
 （2）在线检测图像的时候加一个预选框。
 
-#### 详细说明与调参过程见我的CSDN: https://blog.csdn.net/Amigo_1997
+#### 详细说明与调参过程见我的CSDN: https://blog.csdn.net/Amigo_1997/article/details/89174493?spm=1001.2014.3001.5502
 
 
 
